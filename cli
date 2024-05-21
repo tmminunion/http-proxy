@@ -1,1 +1,1 @@
-docker run -e PORT=4000 -e URL=http://192.168.1.2:80 -p 4000:4000 proxy
+docker run --name=proxyzte -e PORT=3030 -e URL=http://192.168.1.1:80 -p 3030:3030 proxy

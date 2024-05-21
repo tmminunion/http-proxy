@@ -13,5 +13,5 @@ const exampleProxy = createProxyMiddleware({
 // mount `exampleProxy` in web server
 app.use('/', exampleProxy);
 app.listen(port, () => {
-  console.log(`Server running on port ${port}, proxying to ${url} ke halaman http://localhost:${ports}`);
+  console.log(`Server running on port ${port}, proxying to ${url} ke halaman http://localhost:${port}`);
 });
