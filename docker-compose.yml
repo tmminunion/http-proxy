@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  proxy:
+    image: proxy
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+      PORT: 3030 # Environment variable untuk port
+      URL: http://192.168.1.2:80 # Environment variable untuk URL
+    ports:
+      - 3030:3030
